@@ -8,3 +8,61 @@
     box-sizing: border-box;
     font-family: "Exo 2", sans-serif;
 }
+
+/* Start Header Section */
+header {
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 400;
+}
+/* End Header Section */
+
+/* Start Main Section */
+main {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.container {
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.card {
+    width: 500px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header p {
+    position: relative;
+    top: 8px;
+    text-align: center;
+}
+
+.card-body p {
+    position: relative; 
+    top: 20px;
+}
+
+.button {
+    border: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative; 
+    top: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button button i {
+    font-size: 20px;
+}
+/* End Main Section */
