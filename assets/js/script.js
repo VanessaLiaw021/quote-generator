@@ -4,16 +4,22 @@ const button = document.querySelector("button");
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 
+//When the page load, the document is ready to run the function
+$(document).ready(function() {
+
+    //Function that get the quote from API 
+});
+
 //Function that fetch advice from API 
 const getRandomQuote = () => {
 
     //Fetch the quotes from API 
-    fetch("http://api.quotable.io/random")
-        .then(response => response.json())
-        .then(results => () => {
-            quote.innerText = results.content;
-            author.innerText = results.author;
-        });
+    // fetch("http://api.quotable.io/random")
+    //     .then(response => response.json())
+    //     .then(results => () => {
+    //         quote.innerText = results.content;
+    //         author.innerText = results.author;
+    //     });
 };
 
 //Function that generate a random color when button is clicked 
