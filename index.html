@@ -13,7 +13,7 @@
 
     <!--Header Section-->
     <header>
-        <h1>Random Advice Generator</h1>
+        <h1>Random Quote Generator</h1>
     </header>
 
     <!--Main Section-->
@@ -22,18 +22,21 @@
 
             <!--Heading of the adivce and number associated with it-->
             <div class="card-header">
-                <p>Advice <span id="advice-id"></span></p>
+                <p>Advice <span id="quote-id">#001</span></p>
             </div>
 
             <!--Card content to display the advice-->
             <div class="card-body">
-                <p id="advice" class="text-center"></p>
+                <p id="quote" class="text-center">You will face many defeats in life, but never let yourself be 
+                    defeated.
+                </p>
+                <p class="d-flex justify-content-end author">~ <span id="author">Maya Angelou</span></p>
             </div>
+        </div>
 
-            <!--Button to generate a new advice generator-->
-            <div class="button">
-                <button id="new-advice"><i class="fa-solid fa-arrows-rotate"></i></button>
-            </div>
+         <!--Button to generate a new advice generator-->
+         <div class="button">
+            <button id="new-advice"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
     </main>
     

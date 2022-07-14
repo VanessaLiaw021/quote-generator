@@ -11,23 +11,22 @@
 
 /* Start Header Section */
 header {
-    text-align: center;
     margin-top: 45px;
     font-weight: 400;
+}
+
+header h1 {
+    text-align: center;
 }
 /* End Header Section */
 
 /* Start Main Section */
 main {
     display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-}
-
-.container {
-    background-color: pink;
-    border: 1px solid black;
 }
 
 .card {
@@ -54,15 +53,34 @@ main {
 }
 
 .button button {
-    border: none;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 15px;
     position: relative; 
     top: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button button i {
     font-size: 20px;
 }
+
+.author {
+    padding-top: 20px;
+}
 /* End Main Section */
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+    
+    /* Start Main Section */
+    main {
+        width: 300px; 
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+    /* End Main Section */
+}
