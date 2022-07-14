@@ -2,7 +2,6 @@
 const body = document.querySelector("body");
 const button = document.querySelector("button");
 const quote = document.querySelector("#quote");
-const quoteId = document.querySelector("#quote-id");
 const author = document.querySelector("#author");
 
 //Function that fetch advice from API 
@@ -12,8 +11,6 @@ const getRandomQuote = () => {
     fetch("http://api.quotable.io/random")
         .then(response => response.json())
         .then(results => () => {
-
-            quoteId.innerText = results._id;
             quote.innerText = results.content;
             author.innerText = results.author;
         });
